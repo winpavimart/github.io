@@ -1,1 +1,278 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover clothing, apparel and everyday textile essentials from Winpavi.">
+  <title>Winpavi | Clothing & Lifestyle</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #292725;
+      background: #faf9f6;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 7%;
+      background: #fff;
+      border-bottom: 1px solid #eeeae4;
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #292725;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 470px;
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+      background: #e9e2d8;
+    }
+
+    .hero-content {
+      max-width: 620px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.08;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #292725;
+      color: #fff;
+      padding: 13px 25px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .category {
+      background: #fff;
+      padding: 36px 24px;
+      border: 1px solid #eeeae4;
+      min-height: 180px;
+    }
+
+    .category h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .category p {
+      font-size: 14px;
+      color: #615d57;
+    }
+
+    .about {
+      background: #f0eee8;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta {
+      text-align: center;
+    }
+
+    .cta p {
+      margin: 12px 0 25px;
+    }
+
+    footer {
+      padding: 28px 7%;
+      background: #292725;
+      color: #fff;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      nav {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 70px 7%;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+
+      .categories {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">WINPAVI</div>
+    <nav>
+      <a href="#categories">Collections</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Everyday Style · Everyday Comfort</div>
+        <h1>Made for Your Everyday.</h1>
+        <p>
+          Discover clothing, apparel and textile essentials
+          thoughtfully selected for everyday living.
+        </p>
+        <a href="#categories" class="button">Explore Collections</a>
+      </div>
+    </section>
+
+    <section id="categories">
+      <div class="section-heading">
+        <h2>Explore Our Collections</h2>
+        <p>Everyday essentials for your wardrobe and home.</p>
+      </div>
+
+      <div class="categories">
+
+        <article class="category">
+          <h3>Clothing & Apparel</h3>
+          <p>
+            Explore clothing and wearable essentials
+            for different styles and occasions.
+          </p>
+        </article>
+
+        <article class="category">
+          <h3>Home Textiles</h3>
+          <p>
+            Practical textile essentials, including
+            towels and floor mats.
+          </p>
+        </article>
+
+        <article class="category">
+          <h3>Everyday Essentials</h3>
+          <p>
+            Discover useful textile products
+            designed for everyday needs.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-heading">
+        <h2>About Winpavi</h2>
+      </div>
+      <p>
+        Winpavi is an e-commerce brand focused on clothing,
+        apparel and textile-based everyday products.
+        Our aim is to make discovering useful lifestyle
+        essentials simple and convenient.
+      </p>
+    </section>
+
+    <section class="cta" id="contact">
+      <h2>Discover Winpavi</h2>
+      <p>Explore our products through our online marketplaces.</p>
+      <a class="button"
+         href="https://www.amazon.in/"
+         target="_blank"
+         rel="noopener noreferrer">Explore Amazon</a>
+      <a class="button"
+         href="https://www.flipkart.com/"
+         target="_blank"
+         rel="noopener noreferrer"
+         style="margin-left: 8px;">Explore Flipkart</a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Winpavi. All rights reserved.
+  </footer>
+
+</body>
+</html>
 
